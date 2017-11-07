@@ -275,17 +275,17 @@
         "weight": 5000
     },
     "Body14SUP": {
-        "armourHeat": 30,
-        "armourKinetic": 30,
+        "armourHeat": 60,
+        "armourKinetic": 60,
         "buildPoints": 1000,
-        "buildPower": 182,
+        "buildPower": 1820,
         "class": "Droids",
         "designable": 1,
-        "hitpoints": 350,
+        "hitpoints": 3500,
         "id": "Body14SUP",
         "model": "drhbod14.pie",
         "name": "Dragon",
-        "powerOutput": 30000,
+        "powerOutput": 300000,
         "propulsionExtraModels": {
             "HalfTrack": {
                 "left": "prslhtr4.pie",
@@ -317,8 +317,8 @@
             }
         },
         "size": "HEAVY",
-        "weaponSlots": 2,
-        "weight": 6000
+        "weaponSlots": 4,
+        "weight": 60000
     },
     "Body1REC": {
         "armourHeat": 4,

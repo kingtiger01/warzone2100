@@ -75,18 +75,18 @@ function eventStartLevel()
 	// Disable by default
 	setMiniMap(false);
 	setDesign(false);
-	setDroidLimit(selectedPlayer, 100, DROID_ANY);
+	setDroidLimit(selectedPlayer, 500, DROID_ANY);
 	setDroidLimit(selectedPlayer, 10, DROID_COMMAND);
 	setDroidLimit(selectedPlayer, 15, DROID_CONSTRUCT);
 
-	setStructureLimits("A0PowerGenerator", 5, selectedPlayer);
-	setStructureLimits("A0ResourceExtractor", 200, selectedPlayer);
-	setStructureLimits("A0ResearchFacility", 5, selectedPlayer);
-	setStructureLimits("A0LightFactory", 5, selectedPlayer);
-	setStructureLimits("A0CommandCentre", 1, selectedPlayer);
-	setStructureLimits("A0ComDroidControl", 1, selectedPlayer);
-	setStructureLimits("A0CyborgFactory", 5, selectedPlayer);
-	setStructureLimits("A0VTolFactory1", 5, selectedPlayer);
+    setStructureLimits("A0ResourceExtractor", 200, selectedPlayer);    
+    setStructureLimits("A0LightFactory", 10, playnum);	// set structure limits
+    setStructureLimits("A0PowerGenerator", 15, playnum);
+    setStructureLimits("A0ResearchFacility", 50, playnum);
+	setStructureLimits("A0CommandCentre", 3, playnum);
+	setStructureLimits("A0ComDroidControl", 2, playnum);
+	setStructureLimits("A0CyborgFactory", 10, playnum);
+	setStructureLimits("A0VTolFactory1", 10, playnum);
 
 	var structlist = enumStruct(selectedPlayer, HQ);
 	for (var i = 0; i < structlist.length; i++)

@@ -93,7 +93,7 @@ function eventGameInit()
 			setPowerModifier(70 + 5 * powerType, playnum);
 		}
 
-		setDroidLimit(playnum, 150, DROID_ANY);
+		setDroidLimit(playnum, 500, DROID_ANY);
 		setDroidLimit(playnum, 10, DROID_COMMAND);
 		setDroidLimit(playnum, 15, DROID_CONSTRUCT);
 
@@ -103,13 +103,13 @@ function eventGameInit()
 		enableStructure("A0PowerGenerator", playnum);
 		enableStructure("A0ResearchFacility", playnum);
 
-		setStructureLimits("A0LightFactory", 5, playnum);	// set structure limits
-		setStructureLimits("A0PowerGenerator", 8, playnum);
-		setStructureLimits("A0ResearchFacility", 5, playnum);
-		setStructureLimits("A0CommandCentre", 1, playnum);
-		setStructureLimits("A0ComDroidControl", 1, playnum);
-		setStructureLimits("A0CyborgFactory", 5, playnum);
-		setStructureLimits("A0VTolFactory1", 5, playnum);
+		setStructureLimits("A0LightFactory", 10, playnum);	// set structure limits
+		setStructureLimits("A0PowerGenerator", 15, playnum);
+		setStructureLimits("A0ResearchFacility", 50, playnum);
+		setStructureLimits("A0CommandCentre", 3, playnum);
+		setStructureLimits("A0ComDroidControl", 2, playnum);
+		setStructureLimits("A0CyborgFactory", 10, playnum);
+		setStructureLimits("A0VTolFactory1", 10, playnum);
 	}
 	applyLimitSet();	// set limit options
 
